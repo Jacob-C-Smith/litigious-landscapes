@@ -1,0 +1,60 @@
+{
+    "allotment" : 
+    {
+        "name"          : "Alder Creek FFR",
+        "number"        : "00639",
+        "decision date" : "2013/12/30"
+    },
+    "old permet" :
+    [
+        {
+            "livestock" : { "cattle" : 59 },
+            "period" :
+            {
+                "begin" : "XXXX/12/01",
+                "end"   : "XXXX/12/31"
+            },
+            "% PL" : 100,
+            "use" : "active",
+            "AUMs" : 60
+        }
+    ],
+    "new permit" :
+    [
+        {
+            "livestock" : { "cattle" : 69 },
+            "period" :
+            {
+                "begin" : "XXXX/04/01",
+                "end"   : "XXXX/12/15"
+            },
+            "% PL" : 30,
+            "use" : "active",
+            "AUMs" : 52
+        }
+    ],
+    "grazing schedule" :
+    {
+        "pasture" : 1,
+        "year" :
+        [
+            {
+                "begin" : "XXXX/10/01",
+                "end"   : "XXXX/12/15"
+            },
+            {
+                "begin" : "XXXX/10/01",
+                "end"   : "XXXX/12/15"
+            },
+            {
+                "begin" : "XXXX/04/01",
+                "end"   : "XXXX/06/14"
+            }
+        ]
+    },
+    "protest quantity" : 85,
+    "guidelines"       : [ 1, 3, 4, 5, 7, 8, 9, 12 ],
+    "issues"           : [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+    "alternatives"     : [ 1, 2, 3, 4, 5 ],
+    "final decision"   : 4
+}
