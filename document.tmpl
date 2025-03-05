@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ .Name }}</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>{{ .Group }} > {{ .Name }} </h1>
+        <hr>
+        <h2></h2>
+
+        <nav>
+            <ul>
+                <li><a href="#permit">Permit</a></li>
+                <li><a href="#conditions">Conditions</a></li>
+                <li><a href="#issues">Issues</a></li>
+                <li><a href="#alternatives">Alternatives</a></li>
+                <li><a href="#grazing_schedule">Schedule</a></li>
+                <li><a href="#protest">Protest</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="permit">
+                <h2>Permit</h2>
+                <figure>
+                    <table>
+                        <caption>
+                            Before {{ .Date }}
+                        </caption>
+                        <thead>
+                            <tr>
+                              <th scope="col" rowspan="2">Allotment</th>
+                              <th scope="col" colspan="2">Livestock</th>
+                              <th scope="col" colspan="2">Grazing Period</th>
+                              <th scope="col" rowspan="2">% public land</th>
+                              <th scope="col" rowspan="2">Active AUMs</th>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">Number</th>
+                              <th scope="col">Kind</th>
+                              <th scope="col">Begin</th>
+                              <th scope="col">End</th>
+                              </tr>
+                        </thead>
+                          
+                          <tbody>
+                            {{ range .CurrentPermit }}
+                            <tr>
+                                <td> <b>{{ .Name }}</b> <br> <em>№{{ .Number }}<em> </td>
+                                <td> {{ .Livestock.Quantity }} </td>
+                                <td> {{ .Livestock.Type }} </td>
+                                <td> {{ .GrazingPeriod.Start }} </td>
+                                <td> {{ .GrazingPeriod.End }} </td>
+                                <td> {{ .PublicLand }} </td>
+                                <td> {{ .Aum.Active }} </td>
+                            </tr>
+                            {{ end }}
+                          </tbody>
+                    </table>
+                </figure>
+                <figure>
+
+                    <table>
+                        <caption>
+                            After {{ .Date }}
+                        </caption>
+                        <thead>
+                            <tr>
+                              <th scope="col" rowspan="2">Allotment</th>
+                              <th scope="col" colspan="2">Livestock</th>
+                              <th scope="col" colspan="2">Grazing Period</th>
+                              <th scope="col" rowspan="2">% public land</th>
+                              <th scope="col" rowspan="2">Active AUMs</th>
+                            </tr>
+
+                            <tr>
+                              <th scope="row">Number</th>
+                              <th scope="col">Kind</th>
+                              <th scope="col">Begin</th>
+                              <th scope="col">End</th>
+                              </tr>
+                        </thead>
+                          
+                          <tbody>
+                            {{ range .NextPermit }}
+                            <tr>
+                                <td> <b>{{ .Name }}</b> <br> <em> №{{ .Number }}<em> </td>
+                                <td> {{ .Livestock.Quantity }} </td>
+                                <td> {{ .Livestock.Type }} </td>
+                                <td> {{ .GrazingPeriod.Start }} </td>
+                                <td> {{ .GrazingPeriod.End }} </td>
+                                <td> {{ .PublicLand }} </td>
+                                <td> {{ .Aum.Active }} </td>
+                            </tr>
+                            {{ end }}
+                          </tbody>
+                    </table>
+                </figure>
+            </section>
+
+            <section id="conditions">
+                <h2>Conditions</h2>
+                {{ range $key, $value := .Conditions }} 
+
+                <table>
+                    <caption>
+                        {{ $key }}
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">
+                                <div class="tooltip" style="display: inline-block;">
+									Std. 1
+									<span class="tooltiptext">
+										<h3>Standard 1. Watersheds</h3>
+                                        <p>
+                                            Watersheds provide for the proper infiltration, retention, and release of water appropriate to soil type, vegetation, climate, and landform to provide for proper nutrient cycling, hydrologic cycling, and energy flow.
+                                        </p>
+                                        <p>
+                                            Indicators may include, but are not limited to, the following:
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                The amount and distribution of ground cover, including litter, for identified ecological site(s) or soil-plant associations are appropriate for site stability.
+                                            </li>
+                                            <li>
+                                                Evidence  of  accelerated  erosion  in  the  form  of  rills  and/or  gullies, erosional  pedestals,  flow  patterns,  physical  soil  crusts/surface  sealing, and  compaction  layers  below  the  soil  surface  is  minimal  for  soil  type and landform.
+                                            </li>
+                                        </p>
+									</span>
+								</div>
+                            </th>
+                            <th scope="col">
+                                <div class="tooltip" style="display: inline-block;">
+									Std. 2
+									<span class="tooltiptext">
+										<h3>Standard 2. Riparian Areas And Wetlands</h3>
+                                        <p>
+                                            Riparian-wetland areas are in properly functioning condition appropriate to soil type, climate, geology, and landform to provide for proper nutrient cycling, hydrologic cycling, and energy flow.
+                                        </p>
+                                        <p>
+                                            Indicators may include, but are not limited to, the following:
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                 The  riparian/wetland  vegetation  is  controlling  erosion,  stabilizing streambanks, shading water areas to reduce water temperature, stabilizing shorelines, filtering sediment, aiding in floodplain development, dissipating energy,  delaying  flood  water,  and  increasing  recharge  of  groundwater appropriate to site potential.
+                                            </li>
+                                            <li>
+                                                 Riparian/wetland vegetation with deep strong binding roots is sufficientto stabilize streambanks and shorelines. Invader and shallow rooted species are a minor component of the floodplain.
+                                            </li>
+                                            <li>
+                                                 Age  class  and  structural  diversity  of  riparian/wetland  vegetation  is appropriate for the site.
+                                            </li>
+                                            <li>
+                                                 Noxious weeds are not increasing.
+                                            </li>
+                                        </p>
+									</span>
+								</div>
+                            </th>
+                            <th scope="col">
+                                <div class="tooltip" style="display: inline-block;">
+									Std. 3
+									<span class="tooltiptext">
+										<h3>Standard 3. Stream Channel/Floodplain</h3>
+                                        <p>
+                                            Stream channels and floodplains are properly functioning relative to the geomorphology (e.g., gradient, size, shape, roughness, confinement, and sinuosity) and climate to provide for proper nutrient cycling, hydrologic cycling, and energy flow.
+                                        </p>
+                                        <p>
+                                            Indicators may include, but are not limited to, the following:                                        </p>
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                Stream channels and floodplains dissipate energy of high water flows and  transport  sediment.  Soils  support  appropriate  riparian-wetland species,  allowing  water  movement,  sediment  filtration,  and  water  stor- age. Stream channels are not entrenching.
+                                            </li>
+                                            <li>
+                                                Stream width/depth ratio, gradient, sinuosity, and pool, riffle and run frequency are appropriate for the valley bottom type, geology, hydrology, and soils.
+                                            </li>
+                                            <li>
+                                                Streams  have  access  to  their  floodplains  and  sediment  deposition is evident.
+                                            </li>
+                                            <li>
+                                                There is little evidence of excessive soil compaction on the floodplain due to human activities.
+                                            </li>
+                                            <li>
+                                                Streambanks are within an appropriate range of stability according to site potential.
+                                            </li>
+                                            <li>
+                                                Noxious weeds are not increasing.
+                                            </li>
+                                        </p>
+									</span>
+								</div>
+                            </th>
+                            <th scope="col">Std. 4</th>
+                            <th scope="col">Std. 5</th>
+                            <th scope="col">Std. 6</th>
+                            <th scope="col">Std. 7</th>
+                            <th scope="col">Std. 8</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range $k2, $v2 := $value }}
+                        <tr>
+                            <td> {{ $k2 }}</td>
+                            {{ range $k3, $v3 := $v2 }}
+                                <td>{{ . }}</td>
+                            {{ end}}
+                        </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+                {{ end }}
+
+            </section>
+
+            <section id="issues">
+                <h2>Issues</h2>
+                <ol>
+                    {{ range .Issues }}
+                    <li> {{ . }}</li>
+                    {{ end }}
+                </ol>
+            </section>
+
+            <section id="alternatives">
+                <h2>Alternatives</h2>
+                <ol>
+                    {{ range $index, $element := .Alternatives }}
+                        <li {{if eq $index $.FinalDecision }} class="final_decision" {{end}} >
+                            {{ $element }}
+                        </li>
+                    {{ end }}
+                </ol>
+            </section>
+
+            <section id="grazing_schedule">
+                <h2>Schedule</h2>
+                <table>
+                    <caption>
+                        After {{ .Date }}
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">Pasture</th>
+                            <th scope="col" colspan="7">Scheduled Use</th>
+                        </tr>
+                        <tr>
+
+                        {{ range .ScheduleYears }} 
+                            <th scope="col">Year {{.}}</th>
+                        {{ end }}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range $key, $value := .Schedule }} 
+                            <tr>
+                                <td>{{$key}}</td>
+                                {{ range . }}
+                                    {{ if eq .Start "rest" }}
+                                        <td class="rest_year">Rest</td>
+                                    {{ else if eq .Start "transition" }}
+                                        <td class="transition_year">Transition</td>
+                                    {{ else }}
+                                        <td>{{ .Start }} - {{ .End }}</td>
+                                    {{ end }}
+                                {{ end }}
+                                </tr>
+                            {{ end }}
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="protest">
+                <h2>Protest</h2>
+                <p>Quantity: {{.ProtestQuantity}}</p>
+            </section>
+        </main>
+    </body>
+</html>
