@@ -5,14 +5,84 @@
     "type"        : "object",
     "properties"  :
     {
-        "allotment" :
+        "name" :
         {
-            "title"       : "Allotment", 
-            "description" : "Describes an allotment",
+            "title"       : "Name",
+            "description" : "The name of the document",
+            "type"        : "string"
+        },
+        "group" :
+        {
+            "title"       : "Group",
+            "description" : "The name of the allotment group",
+            "type"        : "string"
+        },
+        "date" :
+        {
+            "title"       : "Date",
+            "description" : "The date of the final decision",
+            "type"        : "string"
+        },
+        "current permit" :
+        {   
+            "title"       : "Current permint", 
+            "description" : "Describes each allotment permit in the current permit",
+            "type"        : "array",
+            "items"       : { "$ref": "#/$defs/allotment_permit" }
+        },
+        "resource conditions" : { "$ref" : "#/$defs/resource_conditions" },
+        "issues" :
+        {
+            "title"       : "Issues", 
+            "description" : "Describes the issues that the BLM identified",
+            "type"        : "array",
+            "items"       : { "type" : "string" }
+        },
+        "alternatives" : 
+        {
+            "title"       : "Alternatives", 
+            "description" : "Alternative livestock grazing schemes",
+            "type"        : "array",
+            "items"       : { "type" : "string" }
+        },
+        "final decision" : 
+        {
+            "title" : "Final Decision",
+            "description" : "The final decision, chosen from the alternative livestock grazing schemes",
+            "type" : [ "integer", "string" ]
+        },
+        "next permit" :
+        {   
+            "title"       : "Next permint", 
+            "description" : "Describes each allotment permit in the next permit",
+            "type"        : "array",
+            "items"       : { "$ref": "#/$defs/allotment_permit" }
+        },
+        "schedule" : { "$ref": "#/$defs/schedule" },
+        "protest quantity" : 
+        {
+            "title" : "Protest quantity",
+            "description": "The quantity of protests in the document",
+            "type" : "integer"
+        },
+        "permit" :
+        {   
+            "title"       : "Permit", 
+            "description" : "The permintted use of the grazing permit",
+            "type"        : "array",
+            "items"       : { "$ref": "#/$defs/permit" }
+        }
+    },
+    "$defs" :
+    {
+        "allotment_permit" :
+        {
+            "title"       : "Allotment Permit", 
+            "description" : "Describes a permit for a specific allotment",
             "type"        : "object",
-            "properties"  :
+            "properties"  : 
             {
-                "name" :
+                "name" : 
                 {
                     "title"       : "Name",
                     "description" : "The name of the allotment",
@@ -20,195 +90,189 @@
                 },
                 "number" : 
                 {
-                    "title"       : "Allotment number",
-                    "description" : "[TODO]",
-                    "type"        : "integer"
-                }, 
-                "decision date" : 
-                {
-                    "title"       : "[TODO]",
-                    "description" : "The date of the [TODO] decision, formatted according to ISO 8601",
-                    "type"        : "string"
+                    "title" : "Number",
+                    "description" : "The allotment number; Leading zeros have been truncated",
+                    "type" : "integer",
+                    "minimum" : 0,
+                    "maximum" : 99999
                 },
-                "FFR" :
+                "livestock" : { "$ref": "#/$defs/livestock" },
+                "grazing period" : { "$ref" : "#/$defs/annual_interval" },
+                "public land" :
                 {
-                    "title" : "[TODO]",
-                    "description": "[TODO]",
-                    "type" : "boolean",
-                    "default" : false
-                }
-            }
-        },
-        "old permit" :
-        {
-            "title"       : "Old permint", 
-            "description" : "Describes each line in the old permit",
-            "type"        : "array",
-            "items"       : { "$ref": "#/$defs/line" }
-        },
-        "new permit" :
-        {
-            "title"       : "Old permint", 
-            "description" : "Describes each line in the new permit",
-            "type"        : "array",
-            "items"       : { "$ref": "#/$defs/line" }
-        },
-        "grazing schedule" : 
-        {
-            "title"       : "Grazing schedule",
-            "description" : "Describes a grazing schedule",
-            "type"        : "array",
-            "items"  :
-            {
-                "title"       : "Pasture",
-                "description" : "Describes a pasture over one or more years",
-                "type"        : "object",
-                "properties"  : 
+                    "title" : "Public Land",
+                    "description" : "The percentage of the allotment that is public land",
+                    "type" : "integer",
+                    "default" : 100
+                },
+                "AUM" :
                 {
-                    "name" : {
-                        "title" : "Name",
-                        "description": "The name of the pasture",
-                        "type" : "string"
-                    },
-                    "context" : {
-                        "title" : "Context",
-                        "description": "true if the data contains additional context (footnote, asterisk, etc)",
-                        "type" : "boolean"
-                    },
-                    "year" : 
-                    {
-                        "title"       : "Year",
-                        "description" : " Describes grazing intervals",
-                        "type"        : "array",
-                        "items"       : { "$ref": "#/$defs/date interval" }
-                    }
-                }
-            }
-        },
-        "protest quantity" : 
-        {
-            "title" : "Protest quantity",
-            "description": "The quantity of protests in the document",
-            "type" : "integer"
-        },
-        "guidelines" :
-        {
-            "title"       : "Guidelines",
-            "description" : "The guidelines referenced in the document",
-            "type"        : "array",
-            "items"       :
-            {
-                "title"       : "Guideline",
-                "description" : "A specific guideline",
-                "type"        : "integer"
-            }
-        },
-        "alternatives" :
-        {
-            "title"       : "Alternatives",
-            "description" : "The alternatives referenced in the document",
-            "type"        : "array",
-            "items"       :
-            {
-                "title"       : "Alternative",
-                "description" : "A specific alternative",
-                "type"        : "integer"
-            }
-        },
-        "issues" :
-        {
-            "title"       : "Issues",
-            "description" : "The issues referenced in the document",
-            "type"        : "array",
-            "items"       :
-            {
-                "title"       : "Issue",
-                "description" : "A specific issue",
-                "type"        : "integer"
-            }
-        },
-        "final decision" : 
-        {
-            "title"       : "Final decision",
-            "description" : "The final decision",
-            "type"        : "integer"
-        }
-    },
-    "$defs" :
-    {
-        "line" :
-        {
-            "title"       : "Line description",
-            "description" : "Describes a single line in an allotment",
-            "type"        : "object",
-            "properties"  :
-            {
-                "livestock" :
-                {
-                    "title"       : "The type and quantity of livestock", 
-                    "description" : "Describes an allotment",
+                    "title"       : "The quantity and quality of animal unit months",
+                    "description" : "Animal Unit Month",
                     "type"        : "object",
-                    "properties"  :
-                    {
-                        "type" :
+                    "properties"  : 
+                    { 
+                        "active" :
                         {
-                            "title"       : "Type",
-                            "description" : "The type of the livestock",
-                            "type"        : "string",
-                            "enum"        : [ "cattle", "horses" ]
+                            "title" : "Active AUM's",
+                            "description" : "The quantity of AUM's that are actively grazing",
+                            "type" : "integer"
                         },
-                        "quantity" :
+                        "adaptive" :
                         {
-                            "title"       : "Quantity",
-                            "description" : "The quantity of livestock",
-                            "type"        : "number", 
-                            "minimum"     : 0
+                            "title" : "Adaptive AUM's",
+                            "description" : "The quantity of AUM's that are managed under adaptive grazing",
+                            "type" : "integer"
+                        },
+                        "custodial" :
+                        {
+                            "title" : "Custodial",
+                            "description" : "The quantity of AUM's that are available, but not being utilized",
+                            "type" : "integer"
+                        },
+                        "suspended" :
+                        {
+                            "title" : "Suspended",
+                            "description" : "The quantity of AUM's that have been removed from the permit",
+                            "type" : "integer"
                         }
                     }
-                },
-                "period" : { "$ref" : "#/$defs/date interval"},
-                "% public land": 
-                {
-                    "title"       : "% public land",
-                    "description" : "The percentage of the allotment that is public land",
-                    "type"        : "integer",
-                    "maximum"     : 100,
-                    "minimum"     : 0,
-                    "default"     : 100
-                },
-                "use" :
-                {
-                    "title" : "Use",
-                    "description" : "[TODO]",
-                    "enum" : [ "active", "adaptive", "custodial" ]
-                },
-                "AUMs" :
-                {
-                    "title"       : "AUMs",
-                    "description" : "Animal Unit Month",
-                    "type"        : "integer",
-                    "minimum"     : 0
                 }
             }
         },
-        "date interval" :
+        "annual_interval" :
         {
             "title"       : "Date interval",
             "description" : "An interval describing a date",
             "type"        : "object",
             "properties"  :
             {
-                "begin" : 
+                "start" : { "$ref" : "#/$defs/month_day" },
+                "end"   : { "$ref" : "#/$defs/month_day" }
+            }
+        },
+        "month_day" :
+        {
+            "title"       : "MM/DD",
+            "description" : "A specific day of a month in the implied year",
+            "type"        : "string"
+        },
+        "livestock" : 
+        {
+            "title"       : "Livestock",
+            "description" : "The type and quantity of the livestock",
+            "type"        : "object",
+            "properties"  : 
+            {
+                "type" :
                 {
-                    "title"       : "Begin",
-                    "description" : "The start of the interval, formatted according to ISO 8601",
-                    "type"        : "string"
+                    "title"       : "type",
+                    "description" : "The type of the livestock",
+                    "type"        : "string",
+                    "enum"        : [ "cattle", "horses" ]
                 },
-                "end" : 
+                "quantity" : 
                 {
-                    "title"       : "End",
-                    "description" : "The end of the interval, formatted according to ISO 8601",
-                    "type"        : "string"
+                    "title" : "quantity",
+                    "description" : "The quantity of the livestock",
+                    "type" : "integer",
+                    "minimum" : 1
+                }
+            }
+        },
+        "resource_conditions" :
+        {
+            "title"                : "Resource Conditions",
+            "description"          : "The ecological conditions relevant to the case, as defined in \"Idaho Standards for Rangeland Health and Guidelines for Livestock Grazing Management\", published August 1997",
+            "type"                 : "object",
+            "additionalProperties" : { "$ref" : "#/$defs/allotment_standard" }
+        },
+        "allotment_standard" :
+        {
+            "title"                : "Allotment Standard",
+            "description"          : "The ecological standards relevant to an allotment, as defined in \"Idaho Standards for Rangeland Health and Guidelines for Livestock Grazing Management\", published August 1997",
+            "type"                 : "object",
+            "additionalProperties" : { "$ref" : "#/$defs/pasture_standard" }
+        },
+        "pasture_standard" :
+        {
+            "title"       : "Pasture Standard",
+            "description" : "The ecological standards relevant to a pasture, as defined in \"Idaho Standards for Rangeland Health and Guidelines for Livestock Grazing Management\", published August 1997",
+            "type"        : "array",
+            "default"     :
+            [
+                "watersheds",
+                "riparian areas and wetlands",
+                "steram channel/floodplain",
+                "native plant communities",
+                "seedings",
+                "exotic plant communities",
+                "water quality",
+                "threatened and endangered plants and animals"
+            ],
+            "items"       : { "$ref" : "#/$defs/compliance" }
+        },
+        "compliance" : 
+        {
+            "title" : "compliance",
+            "enum" :
+            [
+                "M",
+                "NM-LSF",
+                "NM-LNF",
+                "NM-SP",
+                "NA",
+                "UD"
+            ]
+        },
+        "schedule" : 
+        {
+            "title"                : "Schedule", 
+            "description"          : "Describes a grazing schedule",
+            "type"                 : "object",
+            "additionalProperties" : { "$ref": "#/$defs/pasture_schedule" } 
+        },
+        "pasture_schedule" : 
+        {
+            "title"       : "Pasture schedule", 
+            "description" : "Describes a grazing schedule for a specific pasture",
+            "type"        : "array",
+            "items"       : { "$ref" : "#/$defs/annual_interval" }
+        },
+        "permit" : 
+        {
+            "title"       : "Permit",
+            "description" : "Permitted use of the grazing permit",
+            "type"        : "object",
+            "properties"  : 
+            { 
+                "permittee" : {
+                    "title" : "Permittee",
+                    "description" : "The name of the permittee",
+                    "type" : "string"
+                },
+                "allotment" : {
+                    "title" : "Allotment",
+                    "description" : "The name of the allotment",
+                    "type" : "string"
+                },
+                "active" :
+                {
+                    "title" : "Active",
+                    "description" : "The quantity of active AUM's",
+                    "type" : "integer"
+                },
+                "suspended" :
+                {
+                    "title" : "Suspended",
+                    "description" : "The quantity of suspended AUM's",
+                    "type" : "integer"
+                },
+                "permitted" :
+                {
+                    "title" : "Permitted",
+                    "description" : "The quantity of permitted AUM's",
+                    "type" : "integer"
                 }
             }
         }
