@@ -1,0 +1,436 @@
+{
+    "$schema": "../schema2.json",
+    "name": "King East Castle Creek",
+    "group": "Owyhee River",
+    "date": "2018/12/21",
+    "current permit": [
+        {
+            "name": "East Castle Creek",
+            "number": 893,
+            "livestock": {
+                "quantity": 810,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "4/1",
+                "end": "1/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 8152
+            }
+        },
+        {
+            "name": "East Castle Creek",
+            "number": 893,
+            "livestock": {
+                "quantity": 21,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "10/25",
+                "end": "1/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 68
+            }
+        },
+        {
+            "name": "East Castle Creek",
+            "number": 893,
+            "livestock": {
+                "quantity": 92,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "11/1",
+                "end": "1/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 278
+            }
+        },
+        {
+            "name": "East Castle Creek",
+            "number": 893,
+            "livestock": {
+                "quantity": 28,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "10/25",
+                "end": "1/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 91
+            }
+        }
+    ],
+    
+    "resource conditions": {
+        "East Castle Creek (warm dry)" :{
+            "5B":[
+                "M",
+                "NM-SP",
+                "NM-SP",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NM-LNF",
+                "NM-LNF"
+            ],
+            "8BIII":[
+                "M",
+                "NM-SP",
+                "NM-SP",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NM-LNF",
+                "NM-LNF"
+            ],
+            "lower portions of 8B":[
+                "M",
+                "NM-SP",
+                "NM-SP",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NM-LNF",
+                "NM-LNF"
+            ]
+        },
+        "East Castle Creek (cool moist)" :{
+            "10B" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "11B" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "44" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "17" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "12" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "13" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "14" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "19" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "29" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "29A" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "29B" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "29C" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "29D" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "28" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "28A" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "27" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "33" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ],
+            "upper portions of 8B" : [
+                "M",
+                "NM-LSF",
+                "NM-LSF",
+                "M",
+                "NA",
+                "NA",
+                "NM-SP",
+                "NM-LSF"
+            ]
+        }
+    },
+    "guidelines" : [ 3, 5, 6, 7, 10, 11, 12 ],
+    "alternatives": [
+        "Current Situation",
+        "Applicants' Proposed action",
+        "Flexibility in a season of use from 4/1 - 3/31",
+        "No Grazing",
+        "Reduce the stocking rate, timing, and duration of grazing"
+    ],
+    "final decision": 5,
+    "next permit": [
+        {
+            "name": "East Castle Creek",
+            "number": 893,
+            "livestock": {
+                "quantity": 350,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "3/15",
+                "end": "1/31"
+            },
+            "public land": 87,
+            "AUM": {
+                "active": 3723,
+                "suspended": 4006
+            }
+        }
+    ],
+    "schedule": {
+        "28" : [
+            {"start": "7/1","end": "7/31"},
+            {"start": "rest","end": "rest"},
+            {"start": "7/1","end": "7/31"},
+            {"start": "7/27","end": "8/22"}
+        ],
+        "28A" : [
+            {"start": "8/1","end": "8/31"},
+            {"start": "7/1","end": "7/26"},
+            {"start": "8/1","end": "8/31"},
+            {"start": "rest","end": "rest"}
+        ],
+        "FFR 18" : [
+            {"start": "6/1","end": "6/30"},
+            {"start": "7/27","end": "8/22"},
+            {"start": "6/1","end": "8/30"},
+            {"start": "7/1","end": "7/26"}
+        ],
+        "19" : 
+        [
+            {"start": "6/1","end": "6/30"},
+            {"start": "7/27","end": "8/22"},
+            {"start": "6/1","end": "8/30"},
+            {"start": "7/1","end": "7/26"}
+        ],
+        "20" : 
+        [
+            {"start": "6/1","end": "6/30"},
+            {"start": "7/27","end": "8/22"},
+            {"start": "6/1","end": "8/30"},
+            {"start": "7/1","end": "7/26"}
+        ],
+        "21" : 
+        [
+            {"start": "6/1","end": "6/30"},
+            {"start": "7/27","end": "8/22"},
+            {"start": "6/1","end": "8/30"},
+            {"start": "7/1","end": "7/26"}
+        ],
+        "27" : 
+        [
+            {"start": "6/1","end": "6/30"},
+            {"start": "7/27","end": "8/22"},
+            {"start": "6/1","end": "8/30"},
+            {"start": "7/1","end": "7/26"}
+        ],
+        "33" : 
+        [
+            {"start": "6/1","end": "6/30"},
+            {"start": "7/27","end": "8/22"},
+            {"start": "6/1","end": "8/30"},
+            {"start": "7/1","end": "7/26"}
+        ],
+        "FFR 26" :
+        [
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"}
+        ],
+        "37" :
+        [
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"}
+        ],
+        "37A" :
+        [
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"}
+        ]
+    },
+    "protest quantity": 192,
+    "before schedule": {
+        "5B" :
+        [
+            {"start": "10/25","end": "1/31"},
+            {"start": "10/25","end": "1/31"}
+        ],
+        "8B, 8BI" :
+        [
+            {"start": "3/15","end": "4/15"},
+            {"start": "5/1","end": "5/30"}
+        ],
+        "10B" :
+        [
+            {"start": "4/15","end": "5/15"},
+            {"start": "4/1","end": "4/30"}
+        ],
+        "11B" :
+        [
+            {"start": "5/15","end": "5/31"},
+            {"start": "6/1","end": "6/15"}
+        ],
+        "11B State, 44" :
+        [
+            {"start": "6/1","end": "6/15"},
+            {"start": "6/15","end": "6/30"}
+        ],
+        "28" :
+        [
+            {"start": "6/1","end": "6/21"},
+            {"start": "6/21","end": "7/15"}
+        ],
+        "28A" :
+        [
+            {"start": "6/21","end": "7/15"},
+            {"start": "6/1","end": "6/21"}
+        ],
+        "FFR Pastures" :
+        [
+            {"start": "4/1","end": "11/30"},
+            {"start": "4/1","end": "11/30"}
+        ]
+    }
+}

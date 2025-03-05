@@ -1,0 +1,143 @@
+{
+    "$schema": "../schema2.json",
+    "name": "06 Castlehead-Lambert",
+    "group": "Owyhee River",
+    "date": "2013/04/05",
+    "current permit": [
+        {
+            "name": "Castlehead-Lambert",
+            "number": 634,
+            "livestock": {
+                "quantity": 334,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "begin": "4/15",
+                "end": "9/30"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 1856
+            }
+        },
+        {
+            "name": "Castlehead-Lambert",
+            "number": 634,
+            "livestock": {
+                "quantity": 10,
+                "type": "horses"
+            },
+            "grazing period": {
+                "begin": "4/8",
+                "end": "9/30"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 58
+            }
+        }
+    ],
+    "resource conditions": {
+        "Castlehead-Lambert" :{
+            "Castlehead-Lambert":[
+                "NA",
+                "NM-LSF",
+                "NM-LSF",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NM-LSF",
+                "NM-LSF"
+            ]
+        }
+    },
+    "guidelines" : [4, 5, 6, 7, 8, 10, 12],
+    "issues": [
+        "Improve upland vegetation plant communities, and in particular, reverse the shift from desirable to undesirable native plant communities.",
+        "Limit juniper encroachment into shrub-steppe vegetation types.",
+        "Prevent introduction and spread of noxious and invasive annual species (e.g. cheatgrass).",
+        "Improve riparian vegetation and stream-bank stability associated with streams and springs/seeps. ",
+        "Improve wildlife habitats, and habitats necessary to meet objectives for sagebrush-steppe and riparian dependent species, including sage-grouse"
+    ],
+    "alternatives": [
+        "Current Situation: Alternative 1 considered continuation of current livestock management practices as they occurred over the past 10 years. The BLM defined the Current Situation Alternative for the purposes of analysis in the EA as that grazing which occurred under the current permit and which led to current conditions on the allotment. In this way, Alternative 1 is linked to the BLM’s description of current conditions on the allotment as outlined in the Affected Environment sections of the EA.",
+        "Permittee's Application for Permit Renewal :  Alternative 2 analyzed the application for permit renewal received from the two permittees authorized to graze livestock in the Castlehead-Lambert allotment and includes the permit terms and conditions requested in that application. This alternative has a 2-year rotational grazing system for four of the six pastures and 4,278 authorized AUMs (an increase of 1,034 AUMs from the current permit, and an increase of 1,333 AUMs when compared to Alternative 1). This alternative captured the permittees’ beliefs that there are additional AUMs available for use on the allotment following recent wildfire. Additionally, consistent with the application received, Alternative 2 includes flexibility in livestock move-dates to provide opportunity for grazing management, to take advantage of climatic variation by moving animals in a manner that assures management objectives are met. Although you requested that a section of boundary fence destroyed by fire be reconstructed and that approximately 0.72 miles of fence be constructed along a ridge to the east of the West Fork Red Canyon to change the allotment boundary between the Castlehead-Lambert and Red Basin allotments, those actions were considered in the actions common to all alternatives section but not analyzed in detail within the EA.",
+        "Performance-Based Alternative: Alternative 3 starts with the current grazing permit and adds to that permit new terms and conditions that constrain the intensity of grazing use in specific ways to improve specific resource conditions. The new terms and conditions are implemented to improve and maintain the health and vigor of upland perennial herbaceous species, maintain hydrologic function and soil/site stability, meet riparian management objectives, and provide suitable habitats for special status wildlife species, including sage-grouse. Alternative 3 does not change livestock numbers, scheduled beginning and end dates for use of the allotments, pasture rotations, pasture seasons of use, active use AUMs, or other terms and conditions from those in the current permit. Instead, the alternative allows the permittee to work within the established dates and livestock numbers that currently exist, as long as the permittee can ensure that specific targets are met. ",
+        "Season-Based Alternative: Alternative 4 addresses resource issues on the allotment by changing when livestock can graze within each pasture of the allotment. Specifically, Alternative 4 establishes new seasons of grazing use that limit adverse impacts from livestock grazing on specific identified resource values present within each pasture. The seasons of use developed by the BLM attempt to do the following: 1) provide more frequent year-long rest or deferment of livestock grazing use to a period outside the active growing season for native perennial bunchgrass species, 2) limit the frequency of disruption and livestock use within sage-grouse breeding habitats, and 3) limit mid-summer grazing use of riparian areas. Application of appropriate seasons of grazing use, resource-specific to each pasture, limits the timing and duration of available grazing in some pastures and results in the overall reduction in levels of authorized grazing use. ",
+        "No Grazing: Alternative 5 removes livestock grazing from the Castlehead-Lambert allotment for 10 years, equivalent to the term of a grazing permit. This alternative would allow resources to recover by removing livestock grazing use from the allotment."
+    ],
+    "final decision": 4,
+    "next permit": [
+        {
+            "name": "Castlehead-Lambert",
+            "number": 634,
+            "livestock": {
+                "quantity": 214,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "begin": "4/15",
+                "end": "9/30"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 1189
+            }
+        },
+        {
+            "name": "Castlehead-Lambert",
+            "number": 634,
+            "livestock": {
+                "quantity": 10,
+                "type": "horses"
+            },
+            "grazing period": {
+                "begin": "4/8",
+                "end": "9/30"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 56
+            }
+        }
+    ],
+    "schedule": {
+        "Castlehead" :
+        [
+            { "start": "6/1" , "end": "6/30" },
+            { "start": "9/16", "end": "9/30" }
+        ],
+        "Carter" :
+        [
+            { "start": "4/15", "end": "5/31" },
+            { "start": "4/15", "end": "4/30" }
+        ],
+        "Red Basin" :
+        [
+            { "start": "7/1", "end": "9/15" },
+            { "start": "7/1" , "end": "9/15" }
+        ],
+        "Lambert Table" :
+        [
+            { "start": "7/1", "end": "7/31" },
+            { "start": "7/1" , "end": "7/31" }
+        ],
+        "Horse" :
+        [
+            { "start": "transition" , "end": "transition" },
+            { "start": "transition", "end": "transition" }
+        ],
+        "Between-the-Canyons" :
+        [
+            { "start": "9/16", "end": "9/30" },
+            { "start": "5/1", "end": "6/30" }
+        ]
+    },
+    "permit": {
+        "06 Livestock Co." : {
+            "active" : 1245,
+            "suspended" : 1272,
+            "permitted" : 2517
+        }
+    }
+}
