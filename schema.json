@@ -1,0 +1,216 @@
+{
+    "$schema"     : "http://json-schema.org/draft-07/schema#",
+    "title"       : "Document description",
+    "description" : "Describes a document",
+    "type"        : "object",
+    "properties"  :
+    {
+        "allotment" :
+        {
+            "title"       : "Allotment", 
+            "description" : "Describes an allotment",
+            "type"        : "object",
+            "properties"  :
+            {
+                "name" :
+                {
+                    "title"       : "Name",
+                    "description" : "The name of the allotment",
+                    "type"        : "string"
+                },
+                "number" : 
+                {
+                    "title"       : "Allotment number",
+                    "description" : "[TODO]",
+                    "type"        : "integer"
+                }, 
+                "decision date" : 
+                {
+                    "title"       : "[TODO]",
+                    "description" : "The date of the [TODO] decision, formatted according to ISO 8601",
+                    "type"        : "string"
+                },
+                "FFR" :
+                {
+                    "title" : "[TODO]",
+                    "description": "[TODO]",
+                    "type" : "boolean",
+                    "default" : false
+                }
+            }
+        },
+        "old permit" :
+        {
+            "title"       : "Old permint", 
+            "description" : "Describes each line in the old permit",
+            "type"        : "array",
+            "items"       : { "$ref": "#/$defs/line" }
+        },
+        "new permit" :
+        {
+            "title"       : "Old permint", 
+            "description" : "Describes each line in the new permit",
+            "type"        : "array",
+            "items"       : { "$ref": "#/$defs/line" }
+        },
+        "grazing schedule" : 
+        {
+            "title"       : "Grazing schedule",
+            "description" : "Describes a grazing schedule",
+            "type"        : "array",
+            "items"  :
+            {
+                "title"       : "Pasture",
+                "description" : "Describes a pasture over one or more years",
+                "type"        : "object",
+                "properties"  : 
+                {
+                    "name" : {
+                        "title" : "Name",
+                        "description": "The name of the pasture",
+                        "type" : "string"
+                    },
+                    "context" : {
+                        "title" : "Context",
+                        "description": "true if the data contains additional context (footnote, asterisk, etc)",
+                        "type" : "boolean"
+                    },
+                    "year" : 
+                    {
+                        "title"       : "Year",
+                        "description" : " Describes grazing intervals",
+                        "type"        : "array",
+                        "items"       : { "$ref": "#/$defs/date interval" }
+                    }
+                }
+            }
+        },
+        "protest quantity" : 
+        {
+            "title" : "Protest quantity",
+            "description": "The quantity of protests in the document",
+            "type" : "integer"
+        },
+        "guidelines" :
+        {
+            "title"       : "Guidelines",
+            "description" : "The guidelines referenced in the document",
+            "type"        : "array",
+            "items"       :
+            {
+                "title"       : "Guideline",
+                "description" : "A specific guideline",
+                "type"        : "integer"
+            }
+        },
+        "alternatives" :
+        {
+            "title"       : "Alternatives",
+            "description" : "The alternatives referenced in the document",
+            "type"        : "array",
+            "items"       :
+            {
+                "title"       : "Alternative",
+                "description" : "A specific alternative",
+                "type"        : "integer"
+            }
+        },
+        "issues" :
+        {
+            "title"       : "Issues",
+            "description" : "The issues referenced in the document",
+            "type"        : "array",
+            "items"       :
+            {
+                "title"       : "Issue",
+                "description" : "A specific issue",
+                "type"        : "integer"
+            }
+        },
+        "final decision" : 
+        {
+            "title"       : "Final decision",
+            "description" : "The final decision",
+            "type"        : "integer"
+        }
+    },
+    "$defs" :
+    {
+        "line" :
+        {
+            "title"       : "Line description",
+            "description" : "Describes a single line in an allotment",
+            "type"        : "object",
+            "properties"  :
+            {
+                "livestock" :
+                {
+                    "title"       : "The type and quantity of livestock", 
+                    "description" : "Describes an allotment",
+                    "type"        : "object",
+                    "properties"  :
+                    {
+                        "type" :
+                        {
+                            "title"       : "Type",
+                            "description" : "The type of the livestock",
+                            "type"        : "string",
+                            "enum"        : [ "cattle", "horses" ]
+                        },
+                        "quantity" :
+                        {
+                            "title"       : "Quantity",
+                            "description" : "The quantity of livestock",
+                            "type"        : "number", 
+                            "minimum"     : 0
+                        }
+                    }
+                },
+                "period" : { "$ref" : "#/$defs/date interval"},
+                "% public land": 
+                {
+                    "title"       : "% public land",
+                    "description" : "The percentage of the allotment that is public land",
+                    "type"        : "integer",
+                    "maximum"     : 100,
+                    "minimum"     : 0,
+                    "default"     : 100
+                },
+                "use" :
+                {
+                    "title" : "Use",
+                    "description" : "[TODO]",
+                    "enum" : [ "active", "adaptive", "custodial" ]
+                },
+                "AUMs" :
+                {
+                    "title"       : "AUMs",
+                    "description" : "Animal Unit Month",
+                    "type"        : "integer",
+                    "minimum"     : 0
+                }
+            }
+        },
+        "date interval" :
+        {
+            "title"       : "Date interval",
+            "description" : "An interval describing a date",
+            "type"        : "object",
+            "properties"  :
+            {
+                "begin" : 
+                {
+                    "title"       : "Begin",
+                    "description" : "The start of the interval, formatted according to ISO 8601",
+                    "type"        : "string"
+                },
+                "end" : 
+                {
+                    "title"       : "End",
+                    "description" : "The end of the interval, formatted according to ISO 8601",
+                    "type"        : "string"
+                }
+            }
+        }
+    }
+}
