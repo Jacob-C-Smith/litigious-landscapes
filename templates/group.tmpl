@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ .Name }}</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <h1> <a href="/">Litigious Landscapes</a> > <a href="..">{{ .CountyName }}</a> > {{ .Name }} > </h1>
+        <hr>
+        <h2></h2>
+
+        <nav>
+            <ul class="group_nav">
+                {{ range .Content }}
+                    <li class="group_nav_li"><a href="{{ .Path }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </body>
+</html>
