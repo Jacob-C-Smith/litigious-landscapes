@@ -35,10 +35,12 @@ nav li {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
+    text-transform:capitalize;
 }
 
 nav a {
     text-decoration: none;
+    text-transform:capitalize;
     color: var(--foreground);
 }
 
