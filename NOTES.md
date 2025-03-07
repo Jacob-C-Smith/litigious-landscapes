@@ -16,3 +16,11 @@ These documents have too much variability to create a strong schema. That is to 
 Document databases provide the flexibility demanded by the project. It is also easy to convert a document representation to a relational one. 
 
 I would look at the longest documents first. I figure there is a higher probability I would find edge cases. 
+
+## Groups
+### Owyhee
+1.
+2.
+3. Toy Mountain
+4. South Mountain
+5. Morgan
