@@ -34,9 +34,24 @@ nav li {
     text-decoration: none;
 }
 
+.group_nav {
+    display: grid;
+    justify-content: start;
+}
+
+.group_nav_li {
+    display: inline-block;    
+    background-color: var(--accent3);
+    color: var(--foreground);
+    margin: 0.5rem;
+}
+
+a {
+    color: var(--foreground);
+}
+
 nav a {
     text-decoration: none;
-    color: blue;
 }
 
 
