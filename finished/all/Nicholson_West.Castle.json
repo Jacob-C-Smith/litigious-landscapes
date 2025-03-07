@@ -1,7 +1,8 @@
 {
     "$schema": "../schema2.json",
     "name": "Nicholson West Castle",
-    "group": "Owyhee River",
+    "county" : "Owyhee",
+    "group": "River Group",
     "date": "2013/12/30",
     "current permit": [
         {

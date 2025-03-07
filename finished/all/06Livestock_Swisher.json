@@ -1,7 +1,8 @@
 {
     "$schema": "../schema2.json",
     "name": "Swisher Springs",
-    "group": "Owyhee River",
+    "county" : "Owyhee",
+    "group": "River Group",
     "date": "2013/04/05",
     "current permit": [
         {

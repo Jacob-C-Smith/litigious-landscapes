@@ -1,7 +1,8 @@
 {
     "$schema": "../schema2.json",
     "name": "Petan Co Garat",
-    "group": "Owyhee River",
+    "county" : "Owyhee",
+    "group": "River Group",
     "date": "2013/03/29",
     "current permit": [
         {

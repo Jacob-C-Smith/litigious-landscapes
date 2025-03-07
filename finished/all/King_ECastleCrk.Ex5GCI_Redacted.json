@@ -1,7 +1,8 @@
 {
     "$schema": "../schema2.json",
     "name": "King East Castle Creek",
-    "group": "Owyhee River",
+    "county" : "Owyhee",
+    "group": "River Group",
     "date": "2018/12/21",
     "current permit": [
         {
