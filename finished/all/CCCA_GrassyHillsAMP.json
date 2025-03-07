@@ -1,0 +1,316 @@
+{
+    "$schema": "../schema.json",
+    "name": "CCCA Grassy Hills AMP",
+    "group": "Devil Creek",
+    "county": "Camas",
+    "date": "2020/06/15",
+    "current permit": [
+        {
+            "name": "Grassy Hills AMP",
+            "number": 1121,
+            "livestock": {
+                "quantity": 306,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "4/1",
+                "end": "1/31"
+            },
+            "public land": 74,
+            "AUM": {
+                "active": 2279
+            }
+        }
+    ],
+    "resource conditions": {
+        "Grassy Hills AMP": {
+            "Black Butte": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Old Pipeline": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "NM-LSF",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Black Butte Seeding": [
+                "M",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "New Field": [
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "East 71": [
+                "M",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "West 71": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "South 71": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Section": [
+                "M",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Section And a Half": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Two Section": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Deklotz": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Salls Field": [
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Catlou Field": [
+                "M",
+                "NM-LNF",
+                "NM-LNF",
+                "M",
+                "NA",
+                "NA",
+                "M",
+                "NM-LNF"
+            ]
+        }
+    },
+    "guidelines": [ 4 ],
+    "issues": [
+        "Reduced sagebrush abundance throughout the allotment ",
+        "Reduced deep-rooted perennial bunchgrasses in New Field and Old Pipeline pastures ",
+        "Abundant fine fuels ",
+        "Flow alteration of Deadwood Creek  ",
+        "Threat of invasive plants and noxious weeds"
+    ],
+    "alternatives": [
+        "Current Management: Alternative 1 would carry forward all allotment management, including AUMs (averaged over this period and including TNR), livestock numbers, seasons of use, grazing systems, terms and conditions, and monitoring, that has occurred in the allotment over the past 10 years. With this, 1,915 AUMs would be authorized on the allotment for 1,177 cattle from 03/18 to 12/31 No new range infrastructure is proposed under this alternative.",
+        "Permittee Proposed Action: Alternative 2 is the permittee’s proposal and includes AUMs, season of use, management strategies, new or modified range infrastructure, and allotment or pasture boundary adjustments, as applied for by the current grazing permit holder. With this, 4,449 AUMs would be authorized for 1,340 cattle from 03/01 to 2/28. No new range infrastructure is proposed under this alternative. ",
+        "Vegetative Production: Alternative 3 is based on the most current vegetative production data and the method used for forage allocation in the Jarbidge RMP (see Appendix D of the EA). Alternative 3 also includes adaptive management in the form of Objectives, Management Guidelines, Thresholds, Grazing Systems, andMonitoring assigned to each pasture and a Response Toolbox if Management Guidelines or Thresholds are exceeded (see Appendix E of the EA), as well as new and modified range infrastructure. The grazing schedule – in terms of seasons of use, classes of livestock, livestock numbers, and pasture rotations – would be determined annually prior to the start of the grazing season in coordination with the permittee and based on a review of applicable monitoring data. Livestock grazing management would be consistent with the terms and conditions, as well as the Objectives, Management Guidelines, Thresholds, and Grazing Systems assigned to each pasture. With this 5,451 AUMs would be authorized for 3,363 cattle from 03/01 to 12/28. This alternative includes range infrastructure modifications described in the EA Section 2.5.14.",
+        "Forage Availability and Resource Needs: Alternative 4 incorporates the vegetative production allocations as defined above for Alternative 3, but adjusts AUMs for slope, distance to water, sage-grouse breeding and nesting habitats, and other resource concerns (see Appendix D of the EA). Alternative 4 also includes adaptive management in the form of Objectives, Management Guidelines, Thresholds, Grazing Systems, and Monitoring assigned to each pasture and a Response Toolbox if Management Guidelines or Thresholds are exceeded (see Appendix E of the EA), as well as new and modified range infrastructure. The grazing schedule – in terms of seasons of use, classes of livestock, livestock numbers, and pasture rotations – would be determined annually prior to the start of the grazing season in coordination with the permittee and based on a review of applicable monitoring data. Livestock grazing management would be consistent with the terms and conditions, as well as the Objectives, Management Guidelines, Thresholds, and Grazing Systems assigned to each pasture. With this 4,723 AUMs would be authorized for 2,871 cattle from 05/01 to 1/31. This alternative includes range infrastructure modifications described in the EA Section 2.5.14.",
+        "Reduced Grazing: Alternative 5 reduces the AUMs and livestock numbers from Alternative 1 (Current Management) by half. Seasons of use, terms and conditions,  and monitoring would be the same as those described for Alternative 1. Pastures with native sagebrush communities or with known sage-grouse habitat would be rested from grazing at least one out of every three years. With this 958 AUMs would be authorized for 589 cattle from 03/18 to 12/31. No new range infrastructure is proposed under this alternative.",
+        "No Grazing: Under Alternative 6, no livestock grazing would be authorized on public lands within the allotment for a term of 10 years"
+    ],
+    "final decision": 4,
+    "next permit": [
+        {
+            "name": "Grassy Hills AMP",
+            "number": 1121,
+            "livestock": {
+                "quantity": 1340,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "4/1",
+                "end": "12/31"
+            },
+            "public land": 80,
+            "AUM": {
+                "adaptive": 4723
+            }
+        }
+    ],
+    "schedule": {
+        "Black Butte": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "Black Butte Seeding": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "Deklotz": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "East 71": [
+            {
+                "start": "3/1",
+                "end": "6/30"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "New Field": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "Old Pipeline": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "Salls Field": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "Section": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "Section And a Half": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "South 71": [
+            {
+                "start": "3/1",
+                "end": "6/30"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "Two Section": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ],
+        "West 71": [
+            {
+                "start": "3/1",
+                "end": "6/15"
+            },
+            {
+                "start": "deferred",
+                "end": "deferred"
+            }
+        ]
+    }
+}

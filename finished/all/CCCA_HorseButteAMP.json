@@ -1,0 +1,120 @@
+{
+    "$schema": "../schema.json",
+    "name": "CCCA Horse Butte AMP",
+    "group": "Devil Creek",
+    "county": "Camas",
+    "date": "2020/06/15",
+    "current permit": [
+        {
+            "name": "Horse Butte AMP",
+            "number": 1120,
+            "livestock": {
+                "quantity": 190,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "4/1",
+                "end": "11/30"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 1519
+            }
+        }
+    ],
+    "resource conditions": {
+        "Horse Butte AMP" : {
+            "Northwest" : [
+                "M",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "M"
+            ],
+            "Northeast" : [
+                "M",
+                "NA",
+                "NA",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NA",
+                "NM-LNF"
+            ],
+            "Southwest" : [
+                "M",
+                "NA",
+                "NA",
+                "M",
+                "NA",
+                "NA",
+                "NA",
+                "NM-SP"
+            ],
+            "Southeast" : [
+                "M",
+                "NA",
+                "M",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NM-LNF",
+                "NM-SP"
+            ]
+        }
+    },
+    "issues": [
+        "Reduced sagebrush abundance in the Northeast, Southwest, and Southeast pastures ",
+        "Reduced deep-rooted perennial bunchgrasses in the Northeast and Southeast pastures ",
+        "Fine fuel accumulation ",
+        "Threat of invasive species "
+    ],
+    "alternatives": [
+        "Current Management: Alternative 1 would carry forward all allotment management, including AUMs (averaged over this period and including TNR), livestock numbers, seasons of use, grazing systems, terms and conditions, and monitoring, that has occurred in the allotment over the past 10 years. With this, 1,515 AUMs would be authorized on the allotment for 582 cattle from 03/01 to 07/15 and 10/22 to 02/28. No new range infrastructure is proposed under this alternative.",
+        "Permittee Proposed Action: Alternative 2 is the permittee’s proposal and includes AUMs, season of use, management strategies, new or modified range infrastructure, and allotment or pasture boundary adjustments, as applied for by the current grazing permit holder. With this, 5,664 AUMs would be authorized for 1,340 cattle from 03/01 to 02/28. No new range infrastructure is proposed under this alternative.",
+        "Vegetative Production: Alternative 3 is based on the most current vegetative production data and the method used for forage allocation in the JarbidgeRMP (see Appendix D of the EA). Alternative 3 also includes adaptive management in the form of Objectives, Management Guidelines, Thresholds, Grazing Systems, and Monitoring assigned to each pasture and a Response Toolbox if Management Guidelines or Thresholds are exceeded (see Appendix E of the EA). The grazing schedule – in terms of seasons of use, classes of livestock, livestock numbers, and pasture rotations – would be determined annually prior to the start of the grazing season in coordination with the permittee and based on a review of applicable monitoring data. Livestock grazing management would be consistent with the terms and conditions, as well as the Objectives, Management Guidelines, Thresholds, and Grazing Systems assigned to each pasture. With this 4,736 AUMs would be authorized for 1,819 cattle from 03/01 to 02/28. This alternative includes range infrastructure modifications described below as well as in the EA, Section 2.5.16.",
+        "Forage Availability and Resource Needs: Alternative 4 incorporates the vegetative production allocations as defined above for Alternative 3, but adjusts AUMs for slope, distance to water, sage-grouse breeding and nesting habitats, and other resource concerns (see Appendix D of the EA). Alternative 4 also includes adaptive management in the form of Objectives, Management Guidelines, Thresholds, Grazing Systems, and Monitoring assigned to each pasture and a Response Toolbox if Management Guidelines or Thresholds are exceeded (see Appendix E of the EA). The grazing schedule, in terms of seasons of use, classes of livestock, livestock numbers, and pasture rotations would be determined annually prior to the start of the grazing season in coordination with the permittee and based on a review of applicable monitoring data. Livestock grazing management would be consistent with the terms and conditions, as well as the Objectives, Management Guidelines, Thresholds, and Grazing Systems assigned to each pasture. With this 4,052 AUMs would be authorized for 1,573 cattle from 04/01 to 12/31. This alternative includes range infrastructure modifications described below as well as in the EA, Section 2.5.16.",
+        "Reduced Grazing: Alternative 5 reduces the AUMs and livestock numbers from Alternative 1 (Current Management) by half. Seasons of use, terms and conditions, management guidelines and monitoring would be the same as those described for Alternative 1. Pastures with native sagebrush communities or with known sage-grouse habitat would be rested from grazing at least one out of every three years. With this 758 AUMs would be authorized for 291 cattle from 03/01 to 07/15 and 10/22 to 02/28. No new range infrastructure is proposed under this alternative.",
+        "No Grazing: Under Alternative 6, no livestock grazing would be authorized on public lands within the allotment for a term of 10 years. "
+    ],
+    "final decision": 3,
+    "next permit": [
+        {
+            "name": "Horse Butte AMP",
+            "number": 1120,
+            "livestock": {
+                "quantity": 1819,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "4/1",
+                "end": "12/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "adaptive": 4736
+            }
+        }
+    ],
+    "schedule": {
+        "Northwest" : [
+            {"start": "3/1","end": "6/15"},
+            {"start": "deferred","end": "deferred"}
+        ],
+        "Northeast" : [
+            {"start": "3/1","end": "6/15"},
+            {"start": "deferred","end": "deferred"}
+        ],
+        "Southwest" : [
+            {"start": "3/1","end": "6/15"},
+            {"start": "deferred","end": "deferred"}
+        ],
+        "Southeast" : [
+            {"start": "3/1","end": "6/15"},
+            {"start": "deferred","end": "deferred"}
+        ]
+    }
+}
