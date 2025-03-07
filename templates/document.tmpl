@@ -417,6 +417,8 @@
                                         <td class="rest_year">Rest</td>
                                     {{ else if eq .Start "transition" }}
                                         <td class="transition_year">Transition</td>
+                                    {{ else if eq .Start "deferred" }}
+                                        <td class="transition_year">Deferred</td>
                                     {{ else }}
                                         <td>{{ .Start }} - {{ .End }}</td>
                                     {{ end }}
