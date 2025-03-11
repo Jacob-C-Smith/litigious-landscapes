@@ -1,0 +1,92 @@
+{
+    "$schema": "../schema.json",
+    "name" : "LU Ranching Mckay FFR",
+    "county" : "Owyhee",
+    "group": "South Mountain",
+    "date": "2013/12/19",
+    "current permit": [
+        {
+            "name": "McKay FFR",
+            "number": 457,
+            "livestock": {
+                "quantity": 20,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "12/1",
+                "end": "12/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 20
+            }
+        }
+    ],
+    "resource conditions":
+    {
+        "Mckay FFR" : 
+        {
+            "Mckay FFR":[
+                "NM-LNF",  
+                "NA",              
+                "NA",              
+                "NM-LNF",                
+                "NA",              
+                "NA",              
+                "NA",              
+                "NM-LNF"        
+            ]
+        }
+    },
+    "issues": [
+        "Habitat conditions for greater sage-grouse",
+        "Fish and amphibian habitat conditions",
+        "Soil compaction",
+        "Riparian vegetation conditions",
+        "Climate change",
+        "Upland vegetation and watershed conditions",
+        "Special status plant species",
+        "Noxious and invasive weeds",
+        "Livestock trailing",
+        "Cultural resources",
+        "Paleontological resources",
+        "Wildfire fuels",
+        "Socioeconomic impacts"
+    ],
+    "alternatives": [
+        "Current Situation ",
+        "Permittee’s Application ",
+        "BLM Developed Alternative ",
+        "BLM Developed Alternative ",
+        "No Grazing "
+    ],
+    "final decision": 2,
+    "next permit": [
+        {
+            "name": "McKay FFR",
+            "number": 457,
+            "livestock": {
+                "quantity": 20,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "12/1",
+                "end": "12/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 20
+            }
+        }
+    ],
+    "permit": [
+        {
+            "allotment": "McKay FFR",
+            "permittee": "LU Ranching Co.",
+            "active": 20,
+            "suspended": 0,
+            "permitted": 20
+        }
+    ],
+    "protest quantity": 22
+}

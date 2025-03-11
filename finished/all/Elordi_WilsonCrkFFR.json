@@ -1,0 +1,114 @@
+{
+    "$schema": "../schema.json",
+    "name": "Elordi Wilson Creek FFR",
+    "county" : "Owyhee",
+    "group": "South Mountain",
+    "date": "2013/12/19",
+    "current permit": [
+        {
+            "name": "Wilson Creek FFR",
+            "number": 537,
+            "livestock": {
+                "quantity": 77,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "12/1",
+                "end": "12/31"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 78
+            }
+        }
+    ],
+    "guidelines" : [ 3, 6, 7 ],
+    "resource conditions": {
+        "Wilson Creek FFR" :{
+            "Wilson Creek FFR" :[
+                "NM-LNF",
+                "NM-LSF",
+                "NM-LSF",
+                "NM-LNF",
+                "NA",
+                "NA",
+                "NA",
+                "NM-LSF"
+            ]
+        }
+    },
+    "issues": [
+
+        "Habitat conditions for sage-grouse",
+        "Fish and amphibian habitat conditions",
+        "Soil compaction",
+        "Riparian vegetation conditions",
+        "Climate change",
+        "Upland vegetation and watershed conditions",
+        "Special status plant species",
+        "Noxious and invasive weeds",
+        "Livestock trailing",
+        "Cultural resources",
+        "Paleontological resources",
+        "Wildfire fuels",
+        "Socioeconomic impacts"
+    ],
+    "alternatives": [
+        "Under alternative 1, BLM would renew the livestock grazing permit for the use in the Wilson Creek FFR allotment in accordance with the current permit and the current situation that led to conditions on the ground.",
+        "Under alternative 2, BLM would renew the 100 percent public land livestock grazing permit for the use in the Wilson Creek FFR allotment in accordance with the application and grazing system received from Thenon Elordi. ",
+        "Under Alternative 3, the BLM would renew grazing on the Wilson Creek FFR allotment using resource constraints and constraints on seasons, intensities, duration, and frequency of grazing use to a degree necessary to meet or make significant progress toward meeting all land health standards and ORMP objectives.",
+        "Under Alternative 4, the BLM would renew grazing on the Wilson Creek FFR allotment using resource constraints and constraints on seasons, intensities, duration, and frequency of grazing use to a degree necessary to meet or make significant progress toward meeting all land health standards and ORMP objectives as described in the proposed action and alternatives, with added emphasis on high value resources. A 3-year rotational grazing system would be implemented that authorizes livestock use based on soil and vegetation resource constraints, with increased emphasis on the high value resources and sage-grouse.  ",
+        "Under Alternative 5, the BLM would not authorize livestock to use public lands within the Wilson Creek FFR allotment for the next 10 years."
+    ],
+    "final decision": 3,
+    "next permit": [
+        {
+            "name": "Wilson Creek FFR",
+            "number": 537,
+            "livestock": {
+                "quantity": 6,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "3/1",
+                "end": "2/28"
+            },
+            "public land": 100,
+            "AUM": {
+                "active": 72
+            }
+        }
+    ],
+    "schedule": {
+        "Pasture 1" : [
+            { "start": "6/1", "end": "6/30" },
+            { "start": "4/1", "end": "4/30" },
+            { "start": "varies", "end": "varies" }
+        ],
+        "Pasture 2" : [
+            { "start": "3/1", "end": "2/28" },
+            { "start": "7/16", "end": "2/28" },
+            { "start": "varies", "end": "varies" }
+        ],
+        "Pasture 4" : [
+            { "start": "3/1", "end": "2/28" },
+            { "start": "7/16", "end": "2/28" },
+            { "start": "varies", "end": "varies" }
+        ],
+        "Pasture 5" : [
+            { "start": "3/1", "end": "2/28" },
+            { "start": "7/16", "end": "2/28" },
+            { "start": "varies", "end": "varies" }
+        ]
+    },
+    "permit": [
+        {
+            "allotment": "Wilson Creek FFR",
+            "permittee": "Thenon Elordi",
+            "active": 78,
+            "suspended": 0,
+            "permitted": 78
+        }
+    ],
+    "protest quantity": 22
+}

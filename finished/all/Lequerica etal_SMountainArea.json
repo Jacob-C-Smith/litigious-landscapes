@@ -1,0 +1,178 @@
+{
+    "$schema": "../schema.json",
+    "name": "Lequerica et al South Mountain Area",
+    "county" : "Owyhee",
+    "group": "Toy Mountain",
+    "date": "2013/12/19",
+    "current permit": [
+        {
+            "name": "Lequerica and Sons",
+            "number" : -1,
+            "livestock": {
+                "quantity": 96,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/1",
+                "end": "9/30"
+            },
+            "public land": 24,
+            "AUM": {
+                "active": 92
+            }
+        },
+        {
+            "name": "Craig and Ronda Brasher",
+            "number": -1,
+            "livestock": {
+                "quantity": 117,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/1",
+                "end": "9/30"
+            },
+            "public land": 40,
+            "AUM": {
+                "active": 184
+            }
+        },
+        {
+            "name": "Corral Creek Grazing Association",
+            "number": -1,
+            "livestock": {
+                "quantity": 312,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/1",
+                "end": "9/30"
+            },
+            "public land": 24,
+            "AUM": {
+                "active": 300
+            }
+        },
+        {
+            "name": "LU Ranch",
+            "number": -1,
+            "livestock": {
+                "quantity": 112,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/1",
+                "end": "9/30"
+            },
+            "public land": 34,
+            "AUM": {
+                "active": 166
+            }
+        }
+    ],
+    "guidelines" : [4, 5, 7, 8, 9],
+    "resource conditions": {
+        "South Mountain Area" : {
+            "South Mountain Area" : [
+                "NM-LSF",
+                "NM-LSF",
+                "NM-LSF",
+                "NM-LSF",
+                "NA",
+                "NA",
+                "NM-LSF",
+                "NM-LSF"
+            ]
+        }
+    },
+    "issues": [
+        "Habitat conditions for greater sage-grouse (Centrocercus urophasianus):  Sage-grouse habitat health is directly related to upland vegetation and watershed conditions. Specific areas of the South Mountain Group allotments contain altered sagebrush community composition, structure, and function that are affecting sage-grouse and other sagebrush habitat-dependent species. Other areas in the group are outside of defined sage-grouse habitat.",
+        "Fish and amphibian habitat conditions:  Stream, floodplain, wetland, and mesic (moderately moist) habitat conditions are directly related to conditions within the riparian vegetation community. Altering of the riparian community may affect the health and sustainability of fish and amphibian populations. ",
+        "Soil compaction:  Soil compaction from the physical presence of livestock remains a concern with moist soils, especially in areas with shallow and fine-textured soils. The hazard of compaction of wet soils with hoof action of livestock may be present, resulting in a reduction of infiltration and soil moisture holding capacity in fine-textured soils.",
+        "Riparian vegetation conditions:  Livestock grazing is affecting riparian condition and aquatic habitat by changing the health and composition of riparian vegetation communities. ",
+        "Climate change:  The issue of climate change and its relationship to the proposed federal action of renewing grazing permits is twofold. Livestock grazing in Owyhee County contributes CO2 and methane emissions to the earth’s atmosphere. In addition, climate change, itself a stressor on the sagebrush-steppe semi-arid ecosystem found in the Owyhee Uplands, can, when found in conjunction with cattle grazing, further stress the ecosystem’s vegetation.   ",
+        "Upland vegetation and watershed conditions:  Livestock grazing is affecting upland vegetation by reducing or removing native vegetation communities that protect watershed soil and hydrologic function. ",
+        "Special status plant species:  Livestock grazing is adversely affecting special status plants by altering surrounding upland vegetation, habitat, and reproduction of individual plants within South Mountain Area allotment. ",
+        "Noxious and invasive weeds:  Livestock grazing and trailing has the potential to increase or spread noxious and invasive weeds. ",
+        "Livestock trailing:  Livestock trailing may adversely affect upland vegetation, soils, weeds, and riparian vegetation. ",
+        "Cultural resources:  Livestock grazing has the potential to damage or displace artifacts and features of a historic property, which may alter the characteristics that qualify it for listing in the National Register of Historic Places. ",
+        "Paleontological resources:  Livestock grazing has the potential to cause breakage and displacement of fossils. ",
+        "Wildfire fuels:  Livestock grazing has the potential to change vegetation that may affect wildfire. ",
+        "Socioeconomic impacts:  Livestock grazing affects local and regional socioeconomic activities generated by livestock production"
+    ],
+    "alternatives": [
+        "Alternative 1 would allow a continuation of current management on the South Mountain Area allotment for Lequerica and Sons, Craig and Ronda Brasher, Corral Creek Grazing Association, and LU Ranch. This would permit 647 cattle from 6/1-9/30 with 745 AUMs.",
+        "Alternative 2 would authorize livestock grazing as applied for by Lequerica and Sons, Craig and Ronda Brasher, Corral Creek Grazing Association, and LU Ranch in coordination with the IDL. This alternative also included a 2-year grazing system that would permit 643 cattle from 6/11-9/20. Included in the application was an initial 17 percent reduction in AUMs and 9 grazing tools to help manage grazing within the allotment. The main tools in the proposal included adjustments in AUMs depending upon riparian proper functioning condition (PFC) monitoring, photo point monitoring, and construction of approximately 5.5 miles of fencing to be built by the permittees and IDL on State, private, and BLM lands. Implementation of this alternative could result in a 28 percent reduction in AUMs depending on riparian monitoring.",
+        "Alternative 3 would issue livestock grazing permits to Lequerica and Sons, Craig and Ronda Brasher, Corral Creek Grazing Association, and LU Ranch with a maximum level of use up to 409 AUMs. As part of the grazing permit, a 3-year deferred-rotation grazing system would be implemented for all permittees. The 3-year grazing system would allow up to 748 cattle for all permittees with no more than 58 days of use each year. Also included in the permit are riparian monitoring terms and conditions. This alternative would result in a 49 percent reduction in permitted AUMs over 3-years.  ",
+        "Alternative 4 would issue livestock grazing permits to Lequerica and Sons, Craig and Ronda Brasher, Corral Creek Grazing Association, and LU Ranch with a maximum level of use up to 288 AUMs. The 3-year grazing system would allow up to 647 cattle for all four permittees with no more than 48 days of use each year. The alternative would result in a 74 percent reduction in AUMs over 3-years. The season of use and AUMs were reduced to provide for faster improvement and further long-term sustainability for riparian and wildlife resources.  ",
+        "Alternative 5 would deny the applications for grazing permit renewal in whole and not authorize grazing for a period of 10 years for the South Mountain Area allotment. The permittees would retain their grazing preference on these allotments. "
+    ],
+    "final decision": 3,
+    "next permit": [
+        {
+            "name": "Lequerica and Sons",
+            "number" : -1,
+            "livestock": {
+                "quantity": 37,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/11",
+                "end": "12/1"
+            },
+            "public land": 24,
+            "AUM": {
+                "active": 51
+            }
+        },
+        {
+            "name": "Craig and Ronda Brasher",
+            "number": -1,
+            "livestock": {
+                "quantity": 45,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/11",
+                "end": "12/1"
+            },
+            "public land": 40,
+            "AUM": {
+                "active": 103
+            }
+        },
+        {
+            "name": "Corral Creek Grazing Association",
+            "number": -1,
+            "livestock": {
+                "quantity": 119,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/11",
+                "end": "12/1"
+            },
+            "public land": 24,
+            "AUM": {
+                "active": 163
+            }
+        },
+        {
+            "name": "LU Ranch",
+            "number": -1,
+            "livestock": {
+                "quantity": 47,
+                "type": "cattle"
+            },
+            "grazing period": {
+                "start": "6/11",
+                "end": "12/1"
+            },
+            "public land": 34,
+            "AUM": {
+                "active": 91
+            }
+        }
+    ],
+    "protest quantity": 22
+}
